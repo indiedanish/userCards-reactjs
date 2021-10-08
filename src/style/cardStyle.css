@@ -1,0 +1,113 @@
+
+* {
+
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.card {
+
+    background-image: linear-gradient(rgba(146, 0, 165, 0.103), rgba(255, 0, 0, 0.13));
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+   
+ 
+}
+
+.card_image {
+    width:30%;
+    height:30%;
+    
+    border-radius:50%;
+    padding: 20px;
+}
+
+.card_title {
+    display: flex;
+    float: right;
+    font-size: 24px;
+    padding: 30px 30px 20px 20px ;
+  
+
+    color: rgb(70, 0, 0);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(94, 0, 0);
+   
+   
+
+}
+
+.card_age {
+
+    font-size: 23px;
+    padding: 20px;  
+
+    color: rgb(104, 41, 41);
+
+    border-top: 2px solid white;
+    border-bottom: 0px solid white;
+}
+
+.card_cell {
+
+    font-size: 18px;
+    padding: 8px 20px 8px 20px;  
+
+    color: rgb(104, 41, 41);
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.card_location {
+
+    font-size: 18px;
+    padding: 8px 20px 8px 20px;  
+
+    color: rgb(104, 41, 41);
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.card_email {
+
+    font-size: 18px;
+    padding: 86px 20px 8px 20px;  
+
+    color: rgb(104, 41, 41);
+
+    border-top: 0px solid white;
+    border-bottom: 0px solid white;
+}
+
+.fa-brands {
+
+    padding: 40px 105px 0px 120px;
+  
+    color: rgb(104, 41, 41);
+ 
+}
+
+.title {
+
+    text-align : center;
+    margin-bottom: 50px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+
+
+.User {
+
+    padding: 100px;
+
+    background-image: url('C:\Users\Danish Butt\Desktop\React Projects\User Cards\user-cards\src\background.jpg');
+   
+}
+
