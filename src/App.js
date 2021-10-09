@@ -70,8 +70,6 @@ function App() {
           />
         </InputGroup>
 
-<div className="container">
-
         <Grid fluid>
           <Row  >
 
@@ -87,8 +85,6 @@ function App() {
         </Grid>
         </div>
 
-
-      </div>
 
     </div>
 
