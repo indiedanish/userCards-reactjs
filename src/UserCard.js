@@ -11,11 +11,18 @@ const UserCard = ({ userData }) => {
 
     const [isFlipped, setFlipped] = useState(false)
 
-    const handleClick = () => {
-        setFlipped(!isFlipped)
+    const onHover = () => {
+        setFlipped(true)
 
 
     }
+
+    const flipBack = () => {
+        setFlipped(false)
+
+
+    }
+
 
     return (
 
@@ -25,7 +32,7 @@ const UserCard = ({ userData }) => {
             <div className="mainCard">
                 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical"  >
 
-                    <div className="card" onMouseOver={handleClick} >
+                    <div className="card" onMouseOver={onHover} onMouseOut={flipBack} >
                         <img className="card_image" src={userData.picture.large} />
 
                         <h1 className="card_title">  {userData.name.first}  </h1>
@@ -35,7 +42,7 @@ const UserCard = ({ userData }) => {
 
                     </div>
 
-                    <div className="card" onMouseOut={handleClick} >
+                    <div className="card" onMouseOut={flipBack} >
 
                         <i class="fa-brands fa-audible fa-3x"></i>
 
