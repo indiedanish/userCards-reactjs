@@ -51,7 +51,7 @@ max-height:100%
 
 .card_age {
 
-    font-size: 1vmax;
+    font-size: 20px;
     padding: 10px 20px 0px 20px;  
 
     color: rgb(104, 41, 41);
@@ -64,7 +64,7 @@ max-height:100%
 
 .card_cell {
 
-    font-size: 1vmax;
+    font-size: 20px;
     padding: 10px 20px 8px 20px;  
 
     color: rgb(104, 41, 41);
@@ -76,7 +76,7 @@ max-height:100%
 
 .card_location {
 
-    font-size: 1vmax;
+    font-size: 20px;
     padding: 8px 20px 8px 20px;  
 
     color: rgb(104, 41, 41);
@@ -90,7 +90,7 @@ max-height:100%
 
 .card_email {
 
-    font-size: 1vmax;
+    font-size: 20px;
     padding: 86px 20px 4px 20px;  
     text-align : center;
 
