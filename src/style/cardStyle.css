@@ -84,13 +84,16 @@ max-height:100%
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     max-width:100%;
-    max-height:100%
+    max-height:100%;
+      
+    text-align : center;
 }
 
 .card_email {
 
     font-size: 1vmax;
     padding: 86px 20px 4px 20px;  
+    text-align : center;
 
     color: rgb(104, 41, 41);
 
