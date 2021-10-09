@@ -42,6 +42,7 @@ function App() {
     const value = e.target.value.toLowerCase();
     const filteredUsers = allUsers.filter(
       user => (`${user.name.first} ${user.name.last}`
+        .toLowerCase().includes(value) || `${user.email}`
         .toLowerCase().includes(value)
       )
 
@@ -62,7 +63,7 @@ function App() {
         <InputGroup className="mb-3">
 
           <FormControl
-            placeholder="Search.."
+            placeholder="Search by name or email..."
             aria-label="Username"
             aria-describedby="basic-addon1"
             onInput={filterCards}
