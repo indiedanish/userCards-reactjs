@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/userCards-reactjs/static/css/main.7342f1cf.chunk.css",
-    "main.js": "/userCards-reactjs/static/js/main.ceab49a3.chunk.js",
-    "main.js.map": "/userCards-reactjs/static/js/main.ceab49a3.chunk.js.map",
+    "main.css": "/userCards-reactjs/static/css/main.ec6f74e9.chunk.css",
+    "main.js": "/userCards-reactjs/static/js/main.4ae16a2c.chunk.js",
+    "main.js.map": "/userCards-reactjs/static/js/main.4ae16a2c.chunk.js.map",
     "runtime-main.js": "/userCards-reactjs/static/js/runtime-main.6339d618.js",
     "runtime-main.js.map": "/userCards-reactjs/static/js/runtime-main.6339d618.js.map",
     "static/css/2.e432e858.chunk.css": "/userCards-reactjs/static/css/2.e432e858.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.3f38aa6a.chunk.js.map": "/userCards-reactjs/static/js/3.3f38aa6a.chunk.js.map",
     "index.html": "/userCards-reactjs/index.html",
     "static/css/2.e432e858.chunk.css.map": "/userCards-reactjs/static/css/2.e432e858.chunk.css.map",
-    "static/css/main.7342f1cf.chunk.css.map": "/userCards-reactjs/static/css/main.7342f1cf.chunk.css.map",
+    "static/css/main.ec6f74e9.chunk.css.map": "/userCards-reactjs/static/css/main.ec6f74e9.chunk.css.map",
     "static/js/2.af99564d.chunk.js.LICENSE.txt": "/userCards-reactjs/static/js/2.af99564d.chunk.js.LICENSE.txt",
     "static/media/cardStyle.css": "/userCards-reactjs/static/media/background.eaac4beb.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.6339d618.js",
     "static/css/2.e432e858.chunk.css",
     "static/js/2.af99564d.chunk.js",
-    "static/css/main.7342f1cf.chunk.css",
-    "static/js/main.ceab49a3.chunk.js"
+    "static/css/main.ec6f74e9.chunk.css",
+    "static/js/main.4ae16a2c.chunk.js"
   ]
 }
