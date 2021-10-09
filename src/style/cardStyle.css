@@ -14,28 +14,35 @@
     position: relative;
     margin-bottom: 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    max-width:100%;
+max-height:100%
    
  
 }
 
 .card_image {
-    width:30%;
-    height:30%;
+    width:100px;
+    height:100px;
     
     border-radius:50%;
     padding: 20px;
+    max-width:100%;
+max-height:100%;
 }
 
 .card_title {
     display: flex;
     float: right;
-    font-size: 24px;
+    font-size: 1.4vmax;
+
     padding: 30px 30px 20px 20px ;
   
 
     color: rgb(70, 0, 0);
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: rgb(94, 0, 0);
+    max-width:100%;
+max-height:100%
    
    
 
@@ -43,53 +50,62 @@
 
 .card_age {
 
-    font-size: 23px;
-    padding: 20px;  
+    font-size: 1vmax;
+    padding: 10px 20px 0px 20px;  
 
     color: rgb(104, 41, 41);
 
     border-top: 2px solid white;
     border-bottom: 0px solid white;
+    max-width:100%;
+max-height:100%
 }
 
 .card_cell {
 
-    font-size: 18px;
-    padding: 8px 20px 8px 20px;  
+    font-size: 1vmax;
+    padding: 10px 20px 8px 20px;  
 
     color: rgb(104, 41, 41);
 
     border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    max-width:100%;
+max-height:100%
 }
 
 .card_location {
 
-    font-size: 18px;
+    font-size: 1vmax;
     padding: 8px 20px 8px 20px;  
 
     color: rgb(104, 41, 41);
 
     border-top: 1px solid white;
     border-bottom: 1px solid white;
+    max-width:100%;
+    max-height:100%
 }
 
 .card_email {
 
-    font-size: 18px;
+    font-size: 1vmax;
     padding: 86px 20px 8px 20px;  
 
     color: rgb(104, 41, 41);
 
     border-top: 0px solid white;
     border-bottom: 0px solid white;
+    max-width:100%;
+max-height:100%
 }
 
 .fa-brands {
 
-    padding: 40px 105px 0px 120px;
-  
     color: rgb(104, 41, 41);
+    max-width:100%;
+max-height:100%;
+text-align:center;
+padding-top: 40px;
  
 }
 
@@ -98,6 +114,7 @@
     text-align : center;
     margin-bottom: 50px;
     font-family: 'Oxygen', sans-serif;
+
 }
 
 
