@@ -12,6 +12,7 @@ function App() {
 
   const [users, setUser] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
+  const [isFlipped, setFlipped] = useState(false)
 
   useEffect(() => {
 
@@ -43,7 +44,7 @@ function App() {
     const filteredUsers = allUsers.filter(
       user => (`${user.name.first} ${user.name.last}`
         .toLowerCase().includes(value) || `${user.email}`
-        .toLowerCase().includes(value)
+          .toLowerCase().includes(value)
       )
 
     )
@@ -58,9 +59,9 @@ function App() {
 
       <div className="User" >
 
-        <h1 className="title">User Cards  </h1>
-<p1 className="note"> (Click on card to change it's Flip Style) </p1>
-        
+        <h1 className="title"  >User Cards  </h1>
+        <p1 className="note"> (Click on card to change it's Flip Style) </p1>
+
 
         <InputGroup className="mb-3">
 
@@ -85,7 +86,7 @@ function App() {
 
           </Row>
         </Grid>
-        </div>
+      </div>
 
 
     </div>

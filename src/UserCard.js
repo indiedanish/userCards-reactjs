@@ -7,7 +7,7 @@ import { useState } from 'react'
 const UserCard = ({ userData }) => {
 
     const [isFlipped, setFlipped] = useState(false)
-    let [FlipStyle, setFlipStyle] = useState("vertical")
+    let [FlipStyle, setFlipStyle] = useState("horizontal")
 
     const onHover = () => {
         setFlipped(true)
