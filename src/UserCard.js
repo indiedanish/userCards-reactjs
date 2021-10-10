@@ -42,7 +42,7 @@ const UserCard = ({ userData }) => {
             <div className="mainCard">
                 <ReactCardFlip isFlipped={isFlipped} flipDirection={FlipStyle}  >
 
-                    <div className="card" onMouseEnter={onHover} onClick={on_Click}  >
+                    <div className="card" onMouseOver={onHover} onClick={on_Click}  >
                         <img className="card_image" src={userData.picture.large} />
 
                         <h1 className="card_title">  {userData.name.first}  </h1>
