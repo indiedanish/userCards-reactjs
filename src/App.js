@@ -59,7 +59,7 @@ function App() {
       <div className="User" >
 
         <h1 className="title">User Cards  </h1>
-
+<p1 className="note"> (Click on card to change it's Flip Style) </p1>
         
 
         <InputGroup className="mb-3">

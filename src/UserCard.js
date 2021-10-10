@@ -23,10 +23,14 @@ const UserCard = ({ userData }) => {
 
     let changeFlipSide = () => {
         FlipStyle == "vertical" ? setFlipStyle("horizontal") : setFlipStyle("vertical");
-        isFlipped == true ? setFlipped(false) : setFlipped(true);
+         setFlipped(true) 
 
     }
+    let changeFlipSide2 = () => {
+        FlipStyle == "vertical" ? setFlipStyle("horizontal") : setFlipStyle("vertical");
+         setFlipped(false) 
 
+    }
 
 
     return (
@@ -37,7 +41,7 @@ const UserCard = ({ userData }) => {
             <div className="mainCard">
                 <ReactCardFlip isFlipped={isFlipped} flipDirection={FlipStyle} >
 
-                    <div className="card" onMouseOver={onHover} onClick={changeFlipSide}  >
+                    <div className="card" onMouseOver={onHover}  onClick={changeFlipSide}  >
                         <img className="card_image" src={userData.picture.large} />
                         <h1 className="card_title">  {userData.name.first}  </h1>
                         <h1 className="card_age"> <i class="fa-solid fa-user"></i> {userData.name.first} {userData.name.last}  </h1>
@@ -45,7 +49,7 @@ const UserCard = ({ userData }) => {
 
                     </div>
 
-                    <div className="card" onMouseOut={flipBack} onClick={changeFlipSide} >
+                    <div className="card" onMouseOut={flipBack} onClick={changeFlipSide2} >
 
                         <i class="fa-brands fa-audible fa-3x"></i>
                         <h3 className="card_email">  {userData.email}  </h3>
