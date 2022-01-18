@@ -8,11 +8,14 @@
 
 .card {
 
-    background-image: linear-gradient(rgba(146, 0, 165, 0.103), rgba(255, 0, 0, 0.13));
+    background-image: linear-gradient(rgba(201, 175, 204, 0.103), rgba(177, 160, 160, 0.13));
     height: 300px;
     width: 300px;
     position: relative;
     margin-bottom: 20px;
+    
+
+ 
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     max-width:100%;
 max-height:100%;
@@ -119,7 +122,7 @@ padding-top: 40px;
     text-align : center;
     margin-bottom: 50px;
     font-family: 'Staatliches', cursive;
-    color: rgb(104, 41, 41);
+    color: rgb(61, 20, 20);
     font-size: 4vmax;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: rgb(94, 0, 0);
@@ -128,14 +131,10 @@ padding-top: 40px;
 }
 
 
-.note{
-   
-}
-
 .User {
 
     padding: 60px;
-    background-image: url('C:\Users\Danish Butt\Desktop\React Projects\User Cards\user-cards\src\background.jpg');
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-technology-data-line-dotted-line-image_18977.jpg');
    
 }
 

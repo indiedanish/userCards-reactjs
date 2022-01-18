@@ -6,92 +6,87 @@ import './style/cardStyle.css'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { InputGroup, FormControl } from 'react-bootstrap'
+import axios from "axios";
+import { FaBars } from "react-icons/fa";
+import { NavLink as Link } from "react-router-dom";
+import styled from "styled-components";
+
+import AddQuiz from "./addQuiz"
+import SignIn from './signin'
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter as Router, Routes } from "react-router-dom";
+import ViewQuiz from './viewQuiz'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import { Route} from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function App() {
-
-
-  const [users, setUser] = useState([]);
-  const [allUsers, setAllUsers] = useState([]);
-  const [isFlipped, setFlipped] = useState(false)
-
-  useEffect(() => {
-
-    (async () => {
-
-      let userData;
-
-      try {
-        const response = await fetch('https://randomuser.me/api/?results=18');
-        userData = (await response.json()).results;
-
-      }
-
-      catch (error) {
-        console.log(error)
-        userData = [];
-
-      }
-
-      setUser(userData)
-      setAllUsers(userData)
-    })()
-
-
-  }, [])
-
-  const filterCards = e => {
-    const value = e.target.value.toLowerCase();
-    const filteredUsers = allUsers.filter(
-      user => (`${user.name.first} ${user.name.last}`
-        .toLowerCase().includes(value) || `${user.email}`
-          .toLowerCase().includes(value)
-      )
-
-    )
-
-    setUser(filteredUsers)
-
-  }
-
   return (
-    <div>
 
+    <>   
 
-      <div className="User" >
+    <Router>
 
-        <h1 className="title"  >User Cards  </h1>
-        <p1 className="note"> (Click on card to change it's Flip Style) </p1>
+    {/* <Navbar bg="dark" variant="dark">
+    <Container>
+    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Nav className="me-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    </Nav>
+    </Container>
+  </Navbar> */}
 
+    {/* <Nav >
+        <Bars />
+  
+        <NavMenu>
+          <NavLink to='/about' activeStyle>
+            About
+          </NavLink>
+          <NavLink to='/events' activeStyle>
+            Events
+          </NavLink>
+          <NavLink to='/annual' activeStyle>
+            Annual Report
+          </NavLink>
+         
+        </NavMenu>
+        <NavBtn>
+          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+        </NavBtn>
+      </Nav>
+       */}
 
-        <InputGroup className="mb-3">
+<Navbar bg="dark" variant="dark">
+    <Container>
+    <Navbar.Brand href="/SignIn">Teacher Pannel</Navbar.Brand>
+    <Nav className="me-auto">
 
-          <FormControl
-            placeholder="Search by name or email..."
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-            onInput={filterCards}
-          />
-        </InputGroup>
+      <Nav.Link href="ViewQuiz">      <Link style={{ color: '#9B9D9E' ,   textDecoration: "none"}} to="/ViewQuiz">View Quiz</Link></Nav.Link>
+      <Nav.Link href="Add Quiz">      <Link style={{ color: '#9B9D9E',   textDecoration: "none"}} to="/AddQuiz">Add Quiz</Link></Nav.Link>
+      
+    </Nav>
+    </Container>
+  </Navbar>
+      <Routes>   
+      <Route exact path="/ViewQuiz" element={<ViewQuiz />} />
+      <Route exact path="/AddQuiz" element={<AddQuiz />} />
+      <Route exact path="/SignIn" element={<SignIn />} />
+  
+      </Routes>  
+      </Router>
 
-        <Grid fluid>
-          <Row  >
-
-
-            {users.map((user, index) =>
-              <Col sm   >
-                <UserCard userData={user} key={index} />
-              </Col>
-
-            )}
-
-          </Row>
-        </Grid>
-      </div>
-
-
-    </div>
+  
+</>
 
   );
+  
 }
 
 export default App;

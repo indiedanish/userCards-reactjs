@@ -3,11 +3,32 @@ import ReactCardFlip from 'react-card-flip'
 import './style/cardStyle.css'
 import { useState } from 'react'
 
+import Button from '@mui/material/Button';
+import axios from 'axios'
 
-const UserCard = ({ userData }) => {
+
+const UserCard = (props) => {
 
     const [isFlipped, setFlipped] = useState(false)
     let [FlipStyle, setFlipStyle] = useState("horizontal")
+    const [deleted, setDeleted] = useState(false)
+
+
+    React.useEffect(()=>{
+
+
+    }, [deleted])
+
+    const deleteQuiz = async (index) => {
+
+        await axios.delete("http://localhost:3000/teacher/deletequiz/61e47ea33a814a12e4e3dc8c/"+index ).then(res=>{
+    setDeleted(!deleted);
+ })
+
+ 
+
+
+    } 
 
     const onHover = () => {
         setFlipped(true)
@@ -42,19 +63,22 @@ const UserCard = ({ userData }) => {
                 <ReactCardFlip isFlipped={isFlipped} flipDirection={FlipStyle} >
 
                     <div className="card" onMouseOver={onHover}  onClick={changeFlipSide}  >
-                        <img className="card_image" src={userData.picture.large} />
-                        <h1 className="card_title">  {userData.name.first}  </h1>
-                        <h1 className="card_age"> <i class="fa-solid fa-user"></i> {userData.name.first} {userData.name.last}  </h1>
-                        <h3 className="card_cell"> <i class="fa-solid fa-phone"></i> {userData.cell}  </h3>
+                        
+                        <h1 align="center"  className="card_title"> Quiz# {props.num+1} </h1>
+
+                        
+                        
 
                     </div>
 
                     <div className="card" onMouseOut={flipBack} onClick={changeFlipSide2} >
 
+                    <Button style={{background:'#3d1414', color: 'white'}} onClick={()=>{deleteQuiz(props.num)}} > Delete</Button>
+
                         <i class="fa-brands fa-audible fa-3x"></i>
-                        <h3 className="card_email">  {userData.email}  </h3>
-                        <h3 className="card_location">
-                        <i class="fa-solid fa-location-dot"></i> {userData.location.street.name}  </h3>
+                        <h3 className="card_email">  {props.userData}  </h3>
+                     
+                      
 
 
 
